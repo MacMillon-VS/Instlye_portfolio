@@ -1,9 +1,5 @@
 import React from "react";
 import HeroSlider from "react-slick";
-
-//Components
-import {PrevArrow, NextArrow} from './Arrows.component';
-
 import testimonials from "./TestimonialCarouselData";
 import { FaStar } from "react-icons/fa";
 
