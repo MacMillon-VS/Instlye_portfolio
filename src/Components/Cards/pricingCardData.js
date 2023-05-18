@@ -1,3 +1,6 @@
+import basic from '../../assets/basic.jpg';
+import standard from '../../assets/standard.jpg';
+import premium from '../../assets/permium.jpg';
 const priceCards =[
     {
         id:1,
@@ -7,6 +10,7 @@ const priceCards =[
         price:1799,
         details:["RCC framed structure", 
         " Basic materials", "RCC foundation & roof"],
+        imagePrice: basic
     },
     {
         id:2,
@@ -15,6 +19,7 @@ const priceCards =[
         duplicatPrice:"2199 ",
         price:2099,
         details:["All features in basic package", "Free Smart Home Automation", "Free Organic Terrace Gardening"],
+        imagePrice:standard
     },
     {
         id:3,
@@ -24,7 +29,8 @@ const priceCards =[
         price:2299,
         details:["All features in standard package",
         "Granite flooring",
-        "Premium quality materials"]
+        "Premium quality materials"],
+        imagePrice:premium
     },
     
 ];

@@ -8,12 +8,10 @@ const PCards = ({priceC}) => {
     <div className="w-full shadow-xl flex flex-col p-2 my-2 rounded-lg ">
   <div 
     className="block max-w-sm rounded-lg bg-white dark:bg-neutral-700 hover:scale-105 duration-300 shadow-[0_4px_9px_-4px_#3b71ca] transition  ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
-    <a href="#!">
-      <img
-        className="rounded-t-lg"
-        src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
-        alt="" />
-    </a>
+      <div className="h-40 md:h-52"> 
+      <img className="rounded-t-lg w-full h-full object-fill"
+        src={priceC.imagePrice}
+        alt="Pricing images" /></div>
     <div className="p-6 bg-[#000300]">
     <div className='text-center  text-white'>
                 <p className='pt-2 text-3xl font-bold'>{priceC.title}</p>

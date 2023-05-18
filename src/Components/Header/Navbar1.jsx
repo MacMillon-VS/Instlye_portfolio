@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link, useLocation } from "react-router-dom";
-
+import mainLogo from '../../assets/MainLogo.png';
 const Navbar1 = () => {
   const [nav, setNav] = useState(false);
   const location = useLocation();
@@ -29,12 +29,13 @@ const Navbar1 = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-
+const widthLogo='50px'
   return (
     <div
-      className={`bg-${navbarBackground} z-30 sticky top-0 flex justify-between items-center h-[72px]  mx-auto px-12 text-[#00df9a]`}
-    >
-      <h1 className="w-full text-3xl font-bold text-[#00df9a]">INSTYLE</h1>
+      className={`bg-${navbarBackground} z-30 sticky top-0 flex justify-between items-center h-[72px]  mx-auto px-12 text-[#00df9a]`}>
+      <div className="flex justify-center my-auto">
+      <img src={mainLogo} alt="Main Logo" width={widthLogo} className="ml-7"/>
+      </div>
       <ul className="hidden md:flex">
         <Link to="/">
           <li

@@ -16,7 +16,7 @@ const data = projData();
   }, []);
 
   return (
-    <div className="container mx-auto py-8 text-white mt-8">
+    <div className="container mx-auto py-8 text-white mt-8 px-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className=" rounded overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105" >
           <img className="w-full rounded-lg shadow-md" src={card.image[activeIndex]} alt={card.title} />

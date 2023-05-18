@@ -39,7 +39,7 @@ const Homepage = () => {
           More Projects
         </button>
       )}
-      <div className="hidden md:block">
+      <div className="hidden">
         <div className="text-center container mx-auto px-24">
           <h2 className="md:text-6xl sm:text-5xl text-4xl font-bold md:py-6 text-white my-8 ">
             Testimonials
