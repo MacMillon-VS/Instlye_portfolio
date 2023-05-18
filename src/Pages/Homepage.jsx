@@ -21,7 +21,7 @@ const Homepage = () => {
           Our Projects
         </h1>
       </div>
-      <div className="mx-24 grid md:grid-cols-3 gap-8 ">
+      <div className="mx-16 md:mx-24 grid md:grid-cols-3 gap-8 ">
         {projCards.slice(0, cardsToShow).map((project) => (
           <CreateProjCard
             image={project.image}

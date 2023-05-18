@@ -12,6 +12,7 @@ const CreateProjCard=({image, title, id})=>{
 
     return () => clearInterval(interval);
   }, []);
+
 // Sample images link
 // "https://via.placeholder.com/500x300",
 // "https://v1.tailwindcss.com/img/card-top.jpg"

@@ -7,7 +7,7 @@ const Sidebar = () => {
   // <div className='m-4 md:flex justify-end items-center h-8 mx-auto px-4 text-cyan-300 hidden py-4 '>
   return (
     <div className=''>
-      <ul className='px:2 fixed right-0 top-1/4 z-10 md:px-3 py-3 flex flex-col space-y-3 '>
+      <ul className='px:2 fixed right-0 top-1/4 z-50 md:px-3 py-3 flex flex-col space-y-3 '>
         <a target='_blank' href='https://instagram.com/instyle_architect?igshid=ZGUzMzM3NWJiOQ==' rel="noreferrer"><li className='p-4'>
         <img className='w-8 opacity-60 cursor-pointer hover:opacity-100 hover:animate-bounce'
         src={ins} alt='instagram'/>

@@ -16,7 +16,7 @@ const Hero = () => {
         className="object-cover h-full w-full absolute opacity-50"
       />
       
-      <div className='max-w-[800px] my-12 w-full pt-24 mx-auto text-center flex flex-col justify-center z-10'>
+      <div className='max-w-[800px] my-auto w-full md:pt-24 mx-auto text-center flex flex-col justify-center z-10'>
         <p className='text-white font-bold p-2 text-lg'>
           Build your future with
         </p>

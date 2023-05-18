@@ -19,7 +19,7 @@ const TryOut = () => {
   const projCards = [
     {
       id: 1,
-      title: "Sathiq",
+      title: "SATHIQ",
       image: [
         // limage[0]
         image1,
@@ -28,7 +28,7 @@ const TryOut = () => {
     },
     {
       id: 2,
-      title: "Jain Jose",
+      title: "JAIN JOSE",
       image: [
         // limage[1]
         image2,
@@ -37,7 +37,7 @@ const TryOut = () => {
     },
     {
       id: 3,
-      title: "Basha",
+      title: "BASHA",
       image: [
         // limage[2],limage[3]
         image3,
@@ -47,7 +47,7 @@ const TryOut = () => {
     },
     {
       id: 4,
-      title: "Jagan",
+      title: "JAGAN",
       image: [
         // limage[4],limage[5],limage[6],limage[7]
         image5,
@@ -59,7 +59,7 @@ const TryOut = () => {
     },
     {
       id: 5,
-      title: "Abbas",
+      title: "ABBAS",
       image: [
         // limage[8],limage[9]
         image9,
@@ -69,7 +69,7 @@ const TryOut = () => {
     },
     {
       id: 6,
-      title: "BN Pushpa",
+      title: "BN PUSPHA",
       image: [
         // limage[10]
         image11,
@@ -78,7 +78,7 @@ const TryOut = () => {
     },
     {
       id: 7,
-      title: "Vijay",
+      title: "VIJAY",
       image: [
         // limage[11],limage[12],limage[13],limage[14]
         image12,
