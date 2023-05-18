@@ -1,13 +1,13 @@
 import React from 'react';
-import Single from '../../assets/single.png'
-import Double from '../../assets/double.png'
-import Triple from '../../assets/triple.png'
+import Single from '../../assets/single.png';
+import Double from '../../assets/double.png';
+import Triple from '../../assets/triple.png';
 
 const Cards = () => {
   return (
     <div className='w-full py-[10rem] px-4 '>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 text-white'>
-          <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
+          <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 bg-red-500'>
               <img className='w-20 mx-auto mt-[-3rem] bg-white' src={Single} alt="/" />
               <h2 className='text-2xl font-bold text-center py-8'>Single User</h2>
               <p className='text-center text-4xl font-bold'>$149</p>

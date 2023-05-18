@@ -1,8 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
 
-
-*{
+html{
   background-color: #000300;
 }
+
+
+.text-shadow {
+  text-shadow: 4px 4px 7px rgba(255, 255, 255, 1);
+}
+

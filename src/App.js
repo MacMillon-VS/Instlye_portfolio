@@ -1,20 +1,31 @@
-import logo from './logo.svg';
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import Navbar from './Components/Header/Navbar';
 import DefaultHOC from './HOC/Default.HOC';
 import Homepage from "./Pages/Homepage";
 import Pricing from "./Pages/Pricing";
-const Test = DefaultHOC(Homepage);
+import ContactPage from './Pages/ContactPage';
+import AboutPage from './Pages/AboutPage';
+import ProjectDetailPage from "./Pages/ProjectDetailPage";
+import NotFound from "./Pages/NotFound";
+
+const Home = DefaultHOC(Homepage);
 const Price = DefaultHOC(Pricing);
+const Contact = DefaultHOC(ContactPage);
+const About = DefaultHOC(AboutPage);
+const ProjectDetails = DefaultHOC(ProjectDetailPage);
+
 function App() {
   return (
     <div >
-      
       <Router>
         <Routes>
-          <Route path="/" exact element={<Test/>} />
+          <Route path="/" exact element={<Home/>} />
           <Route path="/pricing" exact element={<Price/>} />
+          <Route path="/contact" exact element={<Contact/>} />
+          <Route path="/about" exact element={<About/>} />
+          <Route path="/projects/:id" exact element={<ProjectDetails/>} />
+          <Route path="/*" exact element={<NotFound/>} />
         </Routes>
       </Router>
     

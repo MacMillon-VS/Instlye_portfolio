@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar1 from '../Components/Header/Navbar1';
-import NavbarTry from '../Components/Header/NavbarTry';
-import NavbarSub from '../Components/Header/NavbarSub';
+import Sidebar from '../Components/Header/Sidebar';
 import Footer from '../Components/Footer/Footer';
+import useScrollToTop from "../utils/Scroll to top";
 const DefaultLayout = ({ children }) => {
+  useScrollToTop();
   return (
     <div>
-    <NavbarSub/>
+    <Sidebar/>
       <Navbar1 />
       {children}
       <Footer/>

@@ -1,63 +1,47 @@
-import React from 'react';
-import {
-  FaDribbbleSquare,
-  FaFacebookSquare,
-  FaGithubSquare,
-  FaInstagram,
-  FaTwitterSquare,
-} from 'react-icons/fa';
+import React from "react";
+import { FaInstagram, FaPhone, FaWhatsapp } from "react-icons/fa";
+
+import { AiFillMail } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
+    <div className="mx-auto py-6 px-12 bottom-0 mt-12 text-center gap-8 text-gray-300 border-t-[1px] border-cyan-700 grid md:grid-cols-3">
+      <div className="my-auto">
+        <h6 className="font-bold text-lg text-gray-400">Business Hours</h6>
+        <ul>
+          <li className="md:py-2 text-sm">24/7</li>
+        </ul>
+      </div>
+
       <div>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a]'>INSTYLE</h1>
-        <p className='py-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit ullam iste repellat consequatur libero reiciendis, blanditiis accusantium.</p>
-        <div className='flex justify-between md:w-[75%] my-6'>
-            <FaFacebookSquare size={30} />
-            <FaInstagram size={30} />
-            <FaTwitterSquare size={30} />
-            <FaGithubSquare size={30} />
-            <FaDribbbleSquare size={30} />
+        <div>
+          <h1 className="w-full text-3xl font-bold text-[#00df9a]">INSTYLE</h1>
+          <p className="py-4">Architect / Interior / Construction</p>
+        </div>
+        <div className="flex gap-8 md:my-2 justify-center">
+          <a
+            target="_blank"
+            href="https://instagram.com/instyle_architect?igshid=ZDdkNTZiNTM="
+          >
+            <FaInstagram size={30} className="hover:animate-bounce" />
+          </a>
+          <a target="_blank" href="https://wa.me/+918144001528">
+            <FaWhatsapp size={30} className="hover:animate-bounce" />
+          </a>
+          <a target="_blank" href="mailto:teamimran96@gmail.com">
+            <AiFillMail size={30} className="hover:animate-bounce" />
+          </a>
+          <a href="tel:+918144001528">
+            <FaPhone size={30} className="hover:animate-bounce" />
+          </a>
         </div>
       </div>
-      <div className='lg:col-span-2 flex justify-between mt-6'>
-    <div>
-        <h6 className='font-medium text-gray-400'>Solutions</h6>
+      <div className="my-auto">
+        <h6 className="font-bold text-lg text-gray-400">Contact</h6>
         <ul>
-            <li className='py-2 text-sm'>Analytics</li>
-            <li className='py-2 text-sm'>Marketing</li>
-            <li className='py-2 text-sm'>Commerce</li>
-            <li className='py-2 text-sm'>Insights</li>
+          <li className="py-2 text-sm">Mobile: +91 8144001528</li>
+          <li className="pb-2 text-sm">Email: teamimran96@gmail.com </li>
         </ul>
-    </div>
-    <div>
-        <h6 className='font-medium text-gray-400'>Support</h6>
-        <ul>
-            <li className='py-2 text-sm'>Pricing</li>
-            <li className='py-2 text-sm'>Documentation</li>
-            <li className='py-2 text-sm'>Guides</li>
-            <li className='py-2 text-sm'>API Status</li>
-        </ul>
-    </div>
-    <div>
-        <h6 className='font-medium text-gray-400'>Company</h6>
-        <ul>
-            <li className='py-2 text-sm'>About</li>
-            <li className='py-2 text-sm'>Blog</li>
-            <li className='py-2 text-sm'>Jobs</li>
-            <li className='py-2 text-sm'>Press</li>
-            <li className='py-2 text-sm'>Careers</li>
-        </ul>
-    </div>
-    <div>
-        <h6 className='font-medium text-gray-400'>Legal</h6>
-        <ul>
-            <li className='py-2 text-sm'>Claim</li>
-            <li className='py-2 text-sm'>Policy</li>
-            <li className='py-2 text-sm'>Terms</li>
-        </ul>
-    </div>
       </div>
     </div>
   );
