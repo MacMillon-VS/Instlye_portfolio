@@ -59,7 +59,8 @@ const ContactForm = () => {
       <div className="bg-inherit">
       
      <div className='mx-auto text-center flex flex-col text-white px-8 bg-inherit'>
-        <h1 className="md:text-6xl sm:text-5xl text-4xl font-bold md:py-6 bg-inherit md:my-8">Contact Us</h1>
+        <h1 className="md:text-6xl sm:text-5xl text-4xl font-bold md:py-4 bg-inherit md:my-6">Contact Us</h1>
+        <p className="text-gray-400">Contact Instyle Architect today to discuss your architectural design and construction needs</p>
         </div>
     <form onSubmit={sendEmail} id='CForm'>
       <div className="max-w-[760px] py-12 mx-auto grid md:grid-cols-2 gap-8 sm:grid-cols-1 px-8 text-white bg-inherit"
