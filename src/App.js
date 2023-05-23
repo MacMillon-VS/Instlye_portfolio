@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import { Analytics } from '@vercel/analytics';
+import { Analytics } from '@vercel/analytics/react';
 import DefaultHOC from './HOC/Default.HOC';
 import Homepage from "./Pages/Homepage";
 import Pricing from "./Pages/Pricing";
@@ -17,10 +17,7 @@ const ProjectDetails = DefaultHOC(ProjectDetailPage);
 
 
 function App() {
-  const analytics = Analytics({
-    projectId: 'prj_EZ0uTiNMVfpaPCQAP7Z8qb61cmdg',
-  });
-  analytics.page();
+  
   return (
     <div >
       <Router>
@@ -33,7 +30,7 @@ function App() {
           <Route path="/*" exact element={<NotFound/>} />
         </Routes>
       </Router>
-    
+    <Analytics/>
     </div>
   );
 }
